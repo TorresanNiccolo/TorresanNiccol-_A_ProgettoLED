@@ -21,11 +21,10 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(rosso1, HIGH);
-  digitalWrite(verde1, LOW);
-  digitalWrite(rosso2, LOW);
   digitalWrite(verde2, HIGH);
   delay(5000);
 
+  digitalWrite(giallo1, HIGH);
   digitalWrite(giallo2, HIGH);
   delay(5000);
 
@@ -33,15 +32,18 @@ void loop() {
   digitalWrite(giallo2, LOW);
   digitalWrite(rosso2, HIGH);
   digitalWrite(verde1, HIGH);
+  digitalWrite(giallo1, LOW);
   digitalWrite(rosso1, LOW);
   delay(5000);
 
   digitalWrite(giallo1, HIGH);
+  digitalWrite(giallo2, HIGH);
   delay(5000);
 
   digitalWrite(verde1, LOW);
   digitalWrite(giallo1, LOW);
   digitalWrite(rosso1, HIGH);
   digitalWrite(verde2, HIGH);
+  digitalWrite(giallo2, LOW);
   digitalWrite(rosso2, LOW);
 }
